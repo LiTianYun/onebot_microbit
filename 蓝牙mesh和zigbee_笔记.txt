@@ -27,6 +27,7 @@ zigbee ：1/网状网 路由网络
 		  如果网络中中继节点太多，不停重发会导致无线频谱无法支撑，而导致整个网络瘫痪。蓝牙MESH网络通过增加边缘节点选项进行改善。
 		  https://www.sekorm.com/news/41162147.html
 		  4/蓝牙mesh中分三种model：Server、Client和Control。一个节点默认需要两个ServerModel：Configuration Server（0x0000）和HealthServer（0x0002）
+		  状态提供者为server服务器：比如传感器，接收状态和发送指令者为client客户端：比如provisioner，既是状态提供者又需要接收状态发送指令者为control控制端：比如灯的开关。
 		  
 		  */问题：mesh网络的结构（配置），是在网络建立之初设置（provisioning）好的，这个之初指哪一步，例如 天猫精灵 增加新的节点，这些节点的网络
 		  配置是在天猫精灵软件（支持设备）部分设置好的还是在用户主动组网时设置的。
